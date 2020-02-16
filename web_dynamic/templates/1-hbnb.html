@@ -16,15 +16,15 @@
 	 CSS styles
 	 :)
 	 ********************** -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/4-common.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-header.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-footer.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/6-filters.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/8-places.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles/4-common.css') }}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles/3-header.css') }}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles/3-footer.css') }}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles/6-filters.css') }}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles/8-places.css') }}?{{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles/font-awesome.css') }}?{{ cache_id }}">
 
     <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
-    <script src="../static/scripts/1-hbnb.js?{{ cache_id }}"></script>
+    <script src="{{ url_for('static', filename='../static/scripts/1-hbnb.js') }}?{{ cache_id }}"></script>
   </head>
 
   <!-- **********************
@@ -73,10 +73,10 @@
 
 	  <div class="amenities">
 	    <h3>Amenities</h3>
-	    <h4>&nbsp;</h4>
+	    <h4 id="am_h4" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:85%">&nbsp;</h4>
 	    <ul class="popover">
 	      {% for amenity in amens|sort(attribute='name') %}
-	      <LI><input class="am_checkbox" type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name}}"/> {{ amenity.name }}</LI>
+	      <LI><input class="am_checkbox" type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name}}"/>{{ amenity.name }}</LI>
 	      {% endfor %}
 	    </ul>
 	  </div>
