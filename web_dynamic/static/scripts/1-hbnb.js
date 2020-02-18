@@ -1,8 +1,8 @@
 $(document).ready(() => {
-  let dict = {};
+  const dict = {};
   $('input[type="checkbox"]').change(function () {
-    let name = $(this).attr('data-name');
-    let id = $(this).attr('data-id');
+    const name = $(this).attr('data-name');
+    const id = $(this).attr('data-id');
     if (this.checked) {
       dict[name] = id;
     } else {
