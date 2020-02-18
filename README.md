@@ -212,6 +212,8 @@ github repo
 
 ## Authors
 
+* Danny Hollman, [dannyhollman](https://github.com/dannyhollman)
+* John Knight, [jfkquality](https://github.com/jfkquality)
 * MJ Johnson, [@mj31508](https://github.com/mj31508)
 * David John Coleman II, [davidjohncoleman.com](http://www.davidjohncoleman.com/) | [@djohncoleman](https://twitter.com/djohncoleman)
 * Kimberly Wong, [kjowong](https://github.com/kjowong) | [@kjowong](https://twitter.com/kjowong) | [kjowong@gmail.com](kjowong@gmail.com)
